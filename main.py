@@ -16,7 +16,7 @@ st.set_page_config(layout="wide", page_title="Monitoramento de Ônibus")
 @st.cache_data(ttl=30)
 def load_data():
     data_hoje = datetime.now(tz)
-    primeira_data = data_hoje - timedelta(minutes=5)
+    primeira_data = data_hoje - timedelta(minutes=60)
     
     primeira_data_str = primeira_data.strftime("%Y-%m-%d+%H:%M:%S")
     segunda_data_str = data_hoje.strftime("%Y-%m-%d+%H:%M:%S")
@@ -29,7 +29,7 @@ def load_data():
         if df.empty:
             return pd.DataFrame()
 
-        df['datahora_legivel'] = pd.to_datetime(df['datahora'], unit='ms')
+        df['datahora_legivel'] = pd.to_datetime(df['datahoraenvio'], unit='ms')
         # Ajuste de fuso horário para o balãozinho de hover
         df['datahora_legivel'] = df['datahora_legivel'].dt.tz_localize('UTC').dt.tz_convert(tz).dt.strftime('%d/%m/%Y %H:%M:%S')
     
