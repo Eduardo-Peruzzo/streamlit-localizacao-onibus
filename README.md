@@ -1,4 +1,4 @@
-<img width="1042" height="1410" alt="image" src="https://github.com/user-attachments/assets/8ed17425-8997-40ff-8525-9b8814f218b0" /># Monitoramento de Ônibus em Tempo Real
+# Monitoramento de Ônibus em Tempo Real
 
 ---
 
@@ -36,7 +36,7 @@
 6. Renderização — Plotly constrói o mapa (scatter_mapbox ou line_mapbox)
 7. Loop — o @st.fragment reexecuta tudo a cada 30 segundos automaticamente
 
-![Uploading fluxo_monitoramento_onibus.svg…]()
+<img width="1042" height="1410" alt="image" src="https://github.com/user-attachments/assets/8ed17425-8997-40ff-8525-9b8814f218b0" />
 
 ---
 
