@@ -54,9 +54,9 @@
 ---
 
 ## 6. Conclusão e Escalonamento
-
 Aplicativos como Moovit fazem um processo semelhante, o que traz um valor poderoso de escalonamento para o produto em si.
 Há endpoints para BRT e alguns outros transportes públicos.
 Foi complicado de ínicio trabalhar com largura fixa e principalmente com Unix time.
 Mas com estes insights valiosos, sistemas tão, senão mais,, eficientes e/ou completo como Moovit podem ser construídos.
+
 ---
